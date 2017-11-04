@@ -1,5 +1,11 @@
 Based off Ionic blank starter.
 
+### Steps taken
+
+1. Convert HomePage to a lazily-loaded IonicPage
+2. Add a new component (MyTestComponent)
+3. Attempt to load the component using Ionic's ModalController from the HomePage
+
 ### Error when opening modal:
 
 ```
