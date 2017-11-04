@@ -1,26 +1,38 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+Based off Ionic blank starter.
 
-## How to use this template
+### Error when opening modal:
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
-
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
-
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
 ```
-
-Then, to run it, cd into `myBlank` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
+core.es5.js:1020 ERROR Error: Uncaught (in promise): Error: No component factory found for MyTestComponent. Did you add it to @NgModule.entryComponents?
+Error: No component factory found for MyTestComponent. Did you add it to @NgModule.entryComponents?
+    at noComponentFactoryError (core.es5.js:3202)
+    at CodegenComponentFactoryResolver.resolveComponentFactory (core.es5.js:3267)
+    at ModalCmp.ionViewPreLoad (modal-component.js:54)
+    at ModalImpl.ViewController._lifecycle (view-controller.js:577)
+    at ModalImpl.ViewController._preLoad (view-controller.js:425)
+    at OverlayPortal.NavControllerBase._preLoad (nav-controller-base.js:930)
+    at OverlayPortal.NavControllerBase._viewInit (nav-controller-base.js:566)
+    at nav-controller-base.js:356
+    at t.invoke (polyfills.js:3)
+    at Object.onInvoke (core.es5.js:3890)
+    at noComponentFactoryError (core.es5.js:3202)
+    at CodegenComponentFactoryResolver.resolveComponentFactory (core.es5.js:3267)
+    at ModalCmp.ionViewPreLoad (modal-component.js:54)
+    at ModalImpl.ViewController._lifecycle (view-controller.js:577)
+    at ModalImpl.ViewController._preLoad (view-controller.js:425)
+    at OverlayPortal.NavControllerBase._preLoad (nav-controller-base.js:930)
+    at OverlayPortal.NavControllerBase._viewInit (nav-controller-base.js:566)
+    at nav-controller-base.js:356
+    at t.invoke (polyfills.js:3)
+    at Object.onInvoke (core.es5.js:3890)
+    at c (polyfills.js:3)
+    at Object.reject (polyfills.js:3)
+    at OverlayPortal.NavControllerBase._fireError (nav-controller-base.js:322)
+    at OverlayPortal.NavControllerBase._failed (nav-controller-base.js:310)
+    at nav-controller-base.js:365
+    at t.invoke (polyfills.js:3)
+    at Object.onInvoke (core.es5.js:3890)
+    at t.invoke (polyfills.js:3)
+    at r.run (polyfills.js:3)
+    at polyfills.js:3
 ```
-
-Substitute ios for android if not on a Mac.
-
