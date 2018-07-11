@@ -17,7 +17,7 @@ export class HomePage {
 
   openModal(){
     console.log("HomePage.openModal()");
-    let testModal = this.modalCtrl.create(MyTestComponent, { test: "param data"});
+    let testModal = this.modalCtrl.create('MyTestComponent', { test: "param data"});
     testModal.present();
   }
 
